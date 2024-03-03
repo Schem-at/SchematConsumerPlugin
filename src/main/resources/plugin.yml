@@ -1,0 +1,14 @@
+name: SchematConnector
+version: '${project.version}'
+main: org.schemat.schematconnector.SchematConnector
+api-version: '1.20'
+commands:
+  upload:
+    description: Uploads a schematic to Schemat
+    usage: /<command> [name] [description]
+    permission: schemat.upload
+
+  download:
+    description: Downloads a schematic from Schemat
+    usage: /<command> <schematic-id>
+    permission: schemat.download
